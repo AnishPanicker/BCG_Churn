@@ -37,6 +37,3 @@ Loss Function: Binary Crossentropy (ideal for binary classification).
 Primary Metric: AUC-ROC / Recall (to prioritize catching actual churners).
 
 Key Insight: While price sensitivity is a factor, seasonal contract renewal months and contract duration were significant predictors.
-
-4. Professional "Project Description" for your Git Bio
-"Predictive Churn Model for PowerCo (BCG Virtual Experience). Built a TensorFlow/Keras neural network to analyze customer price sensitivity and seasonal churn patterns. Focused on feature engineering of time-series data and handling highly imbalanced datasets (90/10 ratio)."
