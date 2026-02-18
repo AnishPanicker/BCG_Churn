@@ -1,39 +1,27 @@
-PowerCo Customer Churn Prediction
-BCG Gamma Virtual Experience Project
+# PowerCo Customer Churn Prediction – Applied ML Project
 
-📌 Project Overview
-The objective of this project is to investigate price sensitivity as a potential driver for customer churn at PowerCo, a major energy utility provider. Using a dataset of approximately 14,000 customers, I built a predictive model to identify customers at high risk of leaving.
+Context:
+This project is based on the BCG Data Science Virtual Experience (Forage),
+focused on understanding and predicting customer churn for an energy utility provider (PowerCo).
+The dataset used is simulated and publicly provided as part of the program.
 
-🛠️ Tech Stack
-Language: Python
+Problem:
+Customer churn leads to revenue loss and higher customer acquisition costs.
 
-Environment: Google Colab / Jupyter
+Objective:
+Build a machine learning model to identify customers at high risk of churn
+and prepare the system for deployment via an API.
 
-Libraries: TensorFlow/Keras, Pandas, Scikit-Learn, Seaborn
+Approach:
+- Data preprocessing and feature engineering
+- Baseline churn prediction model
+- Evaluation using recall-focused metrics
 
-📊 Data Engineering & Preprocessing
-To prepare the raw utility data for a Neural Network, I performed the following:
+Metric Strategy:
+Recall is prioritized to minimize false negatives (missed churners).
 
-Feature Transformation: Converted raw dates into seasonal features (Month of renewal/modification) to capture time-based churn patterns.
+Tech Stack:
+Python, Pandas, scikit-learn, SQL (analysis), FastAPI (planned), Docker (planned), MLflow (planned)
 
-Categorical Encoding: Applied OneHotEncoding to campaign origins and sales channels.
-
-Handling Imbalance: Utilized Stratified Splitting to maintain the 10% churn ratio across training and testing sets.
-
-Feature Scaling: Used StandardScaler to normalize high-variance features (like energy consumption) for stable Neural Network convergence.
-
-🧠 Modeling Approach
-I implemented a Sequential Neural Network using TensorFlow:
-
-Input Layer: Dynamic shape based on preprocessed features.
-
-Hidden Layer: 20 neurons with ReLU activation.
-
-Output Layer: 1 neuron with Sigmoid activation to output churn probability (0 to 1).
-
-Loss Function: Binary Crossentropy (ideal for binary classification).
-
-📈 Key Results
-Primary Metric: AUC-ROC / Recall (to prioritize catching actual churners).
-
-Key Insight: While price sensitivity is a factor, seasonal contract renewal months and contract duration were significant predictors.
+Status:
+Baseline model completed. Deployment and MLOps integration in progress.
